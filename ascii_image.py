@@ -6,7 +6,6 @@ image = Image.open(r"D:\c programs\pic5.png")
 img2arr = np.array(image)
 weight = list()
 
-
 for i in range(0, image.height-1, 12) :
 	for j in range(0, image.width-1, 8) :
 		a = img2arr[i][j][0] + img2arr[i][j+1][0] + img2arr[i+1][j][0] + img2arr[i+1][j+1][0]
